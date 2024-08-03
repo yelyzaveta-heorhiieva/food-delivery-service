@@ -20,9 +20,10 @@
     <!-- #region Header -->
     <header class="header">
       <div class="container">
-        <a class="logo-link" href="./index.html"
-          ><img src="./images/logo.svg" alt="logo" width="66" height="52"
-        /></a>
+        <a class="logo-link" href="./index.html">
+          <img src="./images/logo.svg" alt="logo" width="66" height="52"
+        />
+      </a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list-item">
@@ -74,10 +75,24 @@
         <div class="container">
           <div class="img-container">
             <img
+            class="apple"
               src="./images/aple.png"
               alt="aple"
               width="396"
               height="502"
+            />
+            
+            <svg class="ellipse" width="550"
+              height="550">
+              <use href="./images/icons.svg#icon-Ellipse-1"></use>
+            </svg>
+
+               <img
+               class="shadow"
+              src="./images/Ellipse 4.svg"
+              alt="shadow"
+              width="252"
+              height="87"
             />
           </div>
           <div class="advantages-content">
@@ -89,6 +104,11 @@
             </p>
             <ul class="advantages-list">
               <li class="advantages-list-item">
+                <div class="icon-container">
+                  <svg class="icon" width="26.92" height="26.68">
+                    <use href="./images/icons.svg#icon-roket"></use>
+                  </svg>
+                </div>
                 <h3 class="list-title">Fasest Delivery</h3>
                 <p class="list-text">
                   Our advanced logistics system and dedicated delivery partners
@@ -96,6 +116,11 @@
                 </p>
               </li class="advantages-list-item">
               <li class="advantages-list-item">
+                 <div class="icon-container">
+                   <svg class="icon" width="21.25" height="28">
+                    <use href="./images/icons.svg#icon-target"></use>
+                  </svg>
+                 </div>
                 <h3 class="list-title">Easy To Order</h3>
                 <p class="list-text">
                   You can browse through a wide variety of cuisines and
@@ -191,34 +216,76 @@
           </p>
           <ul class="reviews-list">
             <li class="reviews-list-item">
+               <div class="star-container">
+                 <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                               </svg>
+                               <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                               </svg>
+                               <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                               </svg>
+                               <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                               </svg>
+                               <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                               </svg>
+               </div>
               <p class="comment">
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
                 questions asked”
               </p>
-              <img
-                src="./images/photo-1.png"
-                alt="Sumith Shah"
-                width="48"
-                height="48"
-              />
-              <h3 class="comment-person">Sumith Shah</h3>
-              <p class="person-text">Some Dude</p>
+              <div class="person-container">
+                <img
+                  src="./images/photo-1.png"
+                  alt="Sumith Shah"
+                  width="48"
+                  height="48"
+                />
+                <div class="person-content">
+                  <h3 class="comment-person">Sumith Shah</h3>
+                  <p class="person-text">Some Dude</p>
+                </div>
+              </div>
             </li>
             <li class="reviews-list-item">
+                 <div class="star-container">
+                   <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                                 </svg>
+                                 <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                                 </svg>
+                                 <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                                 </svg>
+                                 <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                                 </svg>
+                                 <svg class="icon-star" width="17" height="16.32">
+                      <use href="./images/icons.svg#icon-star"></use>
+                                 </svg>
+                 </div>
               <p class="comment">
                 “The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
                 this app”
               </p>
-              <img
-                src="./images/photo-2.png"
-                alt="Sumith Shah"
-                width="48"
-                height="48"
-              />
-              <h3 class="comment-person">Sumith Shah</h3>
-              <p class="person-text">Some Dude</p>
+              <div class="person-container">
+                <img
+                  src="./images/photo-2.png"
+                  alt="Sumith Shah"
+                  width="48"
+                  height="48"
+                />
+                <div class="person-content">
+                  <h3 class="comment-person">Sumith Shah</h3>
+                  <p class="person-text">Some Dude</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -235,8 +302,14 @@
               Favorite Food From Anywhere.
             </p>
             <form class="subscribe-form">
-              <label>
-                <input class="subscribe-input" type="email" placeholder="Enter your email" />
+              <label class="subscribe-label">
+                <input class="subscribe-input valid invalid" type="email" placeholder="Enter your email" />
+                <div class="error-container active">
+                  <svg width="12" height="12">
+                    <use href="./images/icons.svg#icon-error"></use>
+                  </svg>
+                  <span class="error-message">Not a valid email address (example@email.com)</span>
+                </div>
               </label>
               <button class="subscribe-btn" type="submit">Subscribe</button>
             </form>

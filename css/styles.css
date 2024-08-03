@@ -110,11 +110,16 @@ button {
 /* #endregion Header  */
 
 /* #region Hero */
-.hero .container {
-  display: flex;
+
+.hero {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-right: 14px;
+  margin-bottom: 55px;
+}
+
+.hero .container {
+  display: flex;
 }
 
 .hero-content {
@@ -148,34 +153,87 @@ button {
 /* #region Advantages */
 .advantages {
   background-color: #ffe550;
+  padding: 172px 16px 119px 16px;
 }
 
 .advantages .container {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .img-container {
   min-width: 550px;
+  min-height: 550px;
   margin-right: 90px;
+  position: relative;
+}
+
+.apple {
+  position: absolute;
+  z-index: 1;
+  left: 84px;
+  bottom: 102px;
+}
+
+.ellipse {
+  fill: #fefefe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 19px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.shadow {
+  position: absolute;
+  left: 155px;
+  bottom: 75px;
 }
 
 .advantages-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 .advantages-text {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 .advantages-list {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 27px;
+  justify-content: flex-start;
+  align-items: center;
 }
 .advantages-list-item {
+  max-width: 253px;
 }
+
+.icon-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fefefe;
+  margin-bottom: 8px;
+}
+
+.icon {
+  fill: #7eb101;
+}
+
 .list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
+  margin-bottom: 16px;
 }
 .list-text {
   font-weight: 400;
@@ -202,9 +260,9 @@ button {
 
 /* #region Dishes */
 .dishes {
+  padding: 110px 16px;
 }
-.container {
-}
+
 .dishes-title {
   font-weight: 700;
   font-size: 42px;
@@ -246,20 +304,32 @@ button {
 /* #region Reviews */
 .reviews {
   background-color: #ffe550;
+  padding: 133px 16px;
 }
 
 .reviews-title {
   font-weight: 700;
   font-size: 42px;
+  margin-bottom: 20px;
 }
 .reviews-text {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 32px;
 }
 .reviews-list {
   display: flex;
   gap: 139px;
 }
+
+.star-container {
+  margin-bottom: 28.56px;
+}
+
+.icon-star {
+  fill: #ffe550;
+}
+
 .reviews-list-item {
   border-radius: 0 30px 30px 30px;
   max-width: 501px;
@@ -269,11 +339,38 @@ button {
 .comment {
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 40.8px;
 }
+
+.person-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.person-content {
+  position: relative;
+  min-width: 94px;
+}
+
 .comment-person {
   font-weight: 500;
   font-size: 14px;
+  margin-bottom: 2px;
 }
+
+.person-content::after {
+  content: "";
+  border: 1px solid #7eb101;
+  width: 52px;
+  height: 0px;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -26px;
+  top: 50%;
+}
+
 .person-text {
   font-weight: 400;
   font-size: 14px;
@@ -282,21 +379,35 @@ button {
 
 /* #region Subscribe */
 .subscribe {
+  padding: 188px 16px;
 }
 .subscribe .container {
   display: flex;
+}
+
+.subscribe-container {
+  margin-right: auto;
 }
 
 .subscribe-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 .subscribe-text {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 24px;
 }
 .subscribe-form {
+  display: flex;
+}
+
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .subscribe-input {
@@ -305,9 +416,35 @@ button {
   padding: 10px;
   min-width: 395px;
   height: 42px;
+  margin-right: 32px;
+  outline: transparent;
 }
 
-.subscribe-input::placeholder {
+.subscribe-input.valid {
+  border-color: #7eb101;
+}
+
+.subscribe-input.invalid {
+  border-color: #ff705d;
+}
+
+.error-container.active {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.error-container {
+  display: none;
+}
+
+.error-message {
+  font-weight: 400;
+  font-size: 10px;
+  color: #ff705d;
+}
+
+.subscribe-input:fa .subscribe-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
@@ -321,6 +458,7 @@ button {
   border: none;
   padding: 11px 22px;
   min-width: 103px;
+  height: 42px;
   background-color: #bbf330;
 }
 
@@ -332,6 +470,14 @@ button {
 
 /* #region Footer */
 .footer {
+  padding: 100px 16px;
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
 }
 .footer .container {
   display: flex;
@@ -340,6 +486,8 @@ button {
 
 .footer-content {
   display: flex;
+  margin-bottom: 80px;
+  align-items: center;
 }
 .footer-container {
   display: flex;
@@ -359,8 +507,10 @@ button {
   font-size: 14px;
 }
 .strong {
+  display: block;
   font-weight: 500;
   font-size: 14px;
+  margin-bottom: 12px;
 }
 .footer-form {
   display: flex;
@@ -377,6 +527,8 @@ button {
   padding: 10px;
   min-width: 279px;
   height: 42px;
+  margin-bottom: 12px;
+  margin-right: 13px;
 }
 
 .footer-input::placeholder {
