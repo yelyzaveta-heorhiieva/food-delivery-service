@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- #region Header -->
     <header class="header">
       <div class="container">
         <a class="logo-link" href="./index.html"
@@ -42,7 +43,9 @@
         <button class="header-btn" type="button">Order Now</button>
       </div>
     </header>
+     <!-- #endregion Header -->
     <main>
+      <!-- #region Hero -->
       <section class="hero">
         <div class="container">
           <div class="hero-content">
@@ -64,51 +67,57 @@
           />
         </div>
       </section>
+      <!-- #endregion Hero -->
 
-      <section>
+      <!-- #region Advantages -->
+      <section class="advantages">
         <div class="container">
-          <div>
+          <div class="img-container">
             <img
-              class="apple"
               src="./images/aple.png"
               alt="aple"
               width="396"
               height="502"
             />
           </div>
-          <h2>What’s Special About Our Offerings</h2>
-          <p>
-            With our platform, you can browse through a diverse selection of
-            cuisines and local restaurants, and choose from a variety of dishes
-            that cater to your specific taste buds.
-          </p>
-          <ul>
-            <li>
-              <h3>Fasest Delivery</h3>
-              <p>
-                Our advanced logistics system and dedicated delivery partners
-                ensure that your meals are delivered to you within 30-minutes.
-              </p>
-            </li>
-            <li>
-              <h3>Easy To Order</h3>
-              <p>
-                You can browse through a wide variety of cuisines and
-                restaurants, select your favorite meals, and place your order in
-                just a few clicks.
-              </p>
-            </li>
-          </ul>
-          <button type="button">Order Now</button>
+          <div class="advantages-content">
+            <h2 class="advantages-title">What’s Special About Our Offerings</h2>
+            <p class="advantages-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of dishes
+              that cater to your specific taste buds.
+            </p>
+            <ul class="advantages-list">
+              <li class="advantages-list-item">
+                <h3 class="list-title">Fasest Delivery</h3>
+                <p class="list-text">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li class="advantages-list-item">
+              <li class="advantages-list-item">
+                <h3 class="list-title">Easy To Order</h3>
+                <p class="list-text">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order in
+                  just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button class="order-btn" type="button">Order Now</button>
+          </div>
         </div>
       </section>
-      <section>
+      <!-- #endregion Advantages -->
+
+      <!-- #region Dishes -->
+      <section class="dishes">
         <div class="container">
-          <h2>Some of Our Favorites</h2>
-          <p>Looking for something delicious?</p>
-          <ul>
-            <li>
-              <a href="">
+          <h2 class="dishes-title">Some of Our Favorites</h2>
+          <p class="dishes-text">Looking for something delicious?</p>
+          <ul class="dishes-list">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/gamburger.png"
                   alt="gamburger"
@@ -117,8 +126,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/Pasta.png"
                   alt="Pasta"
@@ -127,8 +136,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/pizza.png"
                   alt="pizza"
@@ -137,8 +146,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/chicken.png"
                   alt="chicken"
@@ -147,8 +156,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/salat.png"
                   alt="salat"
@@ -157,8 +166,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="dishes-list-item">
+              <a class="dishes-link" href="">
                 <img
                   src="./images/borshch.png"
                   alt="borshch"
@@ -170,16 +179,19 @@
           </ul>
         </div>
       </section>
-      <section>
+      <!-- #endregion Dishes -->
+
+<!-- #region Reviews-->
+      <section class="reviews">
         <div class="container">
-          <h2>What our Customers Say</h2>
-          <p>
+          <h2 class="reviews-title">What our Customers Say</h2>
+          <p class="reviews-text">
             Don't just take our word for it - see what our satisfied customers
             have to say
           </p>
-          <ul>
-            <li>
-              <p>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <p class="comment">
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
                 questions asked”
@@ -190,11 +202,11 @@
                 width="48"
                 height="48"
               />
-              <h3>Sumith Shah</h3>
-              <p>Some Dude</p>
+              <h3 class="comment-person">Sumith Shah</h3>
+              <p class="person-text">Some Dude</p>
             </li>
-            <li>
-              <p>
+            <li class="reviews-list-item">
+              <p class="comment">
                 “The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
                 this app”
@@ -205,59 +217,75 @@
                 width="48"
                 height="48"
               />
-              <h3>Sumith Shah</h3>
-              <p>Some Dude</p>
+              <h3 class="comment-person">Sumith Shah</h3>
+              <p class="person-text">Some Dude</p>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <!-- #endregion Reviews-->
+
+<!-- #region Subscribe -->
+      <section class="subscribe">
         <div class="container">
-          <h2>Subscribe To Get Special Offer</h2>
-          <p>
-            Order now and receive 10% off your first meal with Enjoy Your
-            Favorite Food From Anywhere.
-          </p>
-          <form>
-            <label for=""
-              ><input type="text" placeholder="Enter your email" />
-            </label>
-            <button type="submit">Subscribe</button>
-          </form>
+          <div class="subscribe-container">
+            <h2 class="subscribe-title">Subscribe To Get Special Offer</h2>
+            <p class="subscribe-text">
+              Order now and receive 10% off your first meal with Enjoy Your
+              Favorite Food From Anywhere.
+            </p>
+            <form class="subscribe-form">
+              <label>
+                <input class="subscribe-input" type="email" placeholder="Enter your email" />
+              </label>
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
           <img src="./images/banan.png" alt="banan" width="608" height="266" />
         </div>
       </section>
-      <footer>
+      <!-- #endregion Subscribe --> 
+
+      <!-- #region Footer -->
+      <footer class="footer">
         <div class="container">
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="logo" />
-          </a>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <div>
-            <strong>Subscribe</strong>
-            <form action="">
-              <input type="text" placeholder="Enter your email" />
-              <label for=""
-                >By subscribing you agree to with our
-                <a href="">Privacy Policy</a></label
-              >
-              <button type="submit">Subscribe</button>
-            </form>
+          <div class="footer-content">
+            <a class="footer-logo-link" href="./index.html">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+            <ul class="footer-menu">
+              <li class="menu-item"><a class="menu-link" href="">Home</a></li>
+              <li class="menu-item"><a class="menu-link" href="">About</a></li>
+              <li class="menu-item"><a class="menu-link" href="">Service</a></li>
+              <li class="menu-item"><a class="menu-link" href="">Menu</a></li>
+              <li class="menu-item"><a class="menu-link" href="">Contact</a></li>
+            </ul>
+            <div>
+              <strong class="strong">Subscribe</strong>
+              <form class="footer-form">
+                <div class="form-container">
+                  <input class="footer-input" type="email" placeholder="Enter your email" id="subscribe"/>
+                  <label class="footer-label" for="subscribe"
+                    >By subscribing you agree to with our
+                    <a class="privacy-policy" href="">Privacy Policy</a></label
+                  >
+                </div>
+                <button class="footer-btn" type="submit">Subscribe</button>
+              </form>
+            </div>
           </div>
-          <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms of Service</a></li>
-            <li><a href="">Cookies Settings</a></li>
-          </ul>
-          <p>2022 FoodSta. All right reserved.</p>
+          <div class="footer-container">
+            <ul class="footer-list">
+              <li class="footer-list-item"><a class="footer-link" href="">Privacy Policy</a></li>
+              <li class="footer-list-item"><a class="footer-link" href="">Terms of Service</a></li>
+              <li class="footer-list-item"><a class="footer-link" href="">Cookies Settings</a></li>
+            </ul>
+            <p class="footer-text">2022 FoodSta. All right reserved.</p>
+          </div>
         </div>
       </footer>
+       <!-- #endregion Footer -->
+
     </main>
   </body>
 </html>
