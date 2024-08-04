@@ -608,7 +608,7 @@ button {
 }
 /* #endregion Footer */
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 1280px) {
   .container {
     padding: 0 16px;
   }
