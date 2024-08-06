@@ -1342,6 +1342,7 @@ button {
     padding: 100px 0;
     background-image: url(../images/footer.png);
     background-position: bottom right;
+    background-size: auto;
   }
 
   @media (min-resolution: 192dpi) {
