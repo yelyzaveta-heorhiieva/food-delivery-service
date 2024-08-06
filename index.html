@@ -328,11 +328,15 @@
               Order now and receive 10% off your first meal with Enjoy Your
               Favorite Food From Anywhere.
             </p>
-            <form class="subscribe-form">
+            <form class="subscribe-form"
+          name="subscribe-form"
+          autocomplete="off"
+          novalidate>
               <div class="subscribe-label">
                 <input
                   class="subscribe-input valid invalid"
                   type="email"
+                  name="user-email"
                   placeholder="Enter your email"
                 />
                 <div class="error-container active">
@@ -379,11 +383,14 @@
             </ul>
             <div class="strong-container">
               <strong class="strong">Subscribe</strong>
-              <form class="footer-form">
+              <form class="footer-form" name="subscribe-form"
+          autocomplete="off"
+          novalidate>
                 <div class="form-container">
                   <input
                     class="footer-input valid invalid"
                     type="email"
+                    name="user-email"
                     placeholder="Enter your email"
                   />
                   <div class="error-container active">
@@ -420,6 +427,31 @@
         </div>
       </footer>
       <!-- #endregion Footer -->
+
+      <!-- #region Overflay -->
+      <div class="modal-overflay is-open">
+        <div class="overflay"> 
+          <button class="close-btn" type="button">
+            <svg class="close-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-quit-marker"></use>
+            </svg>
+          </button>
+          <p class="overlay-text">Order Form</p>
+          <form class="form"
+          name="issue_report_form"
+          autocomplete="off"
+          novalidate>
+            <label class="overlay-label" for="user-name">Name</label>
+            <input class="overlay-input" type="text" placeholder="Your name" name="user-name" id="user-name">
+            <label class="overlay-label" for="user-tel">Phone number</label>
+            <input class="overlay-input" type="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" name="user-tel" id="user-tel">
+            <label class="overlay-label" for="user-email">E-mail</label>
+            <input class="overlay-input" type="email" placeholder="example@gmail.com" name="user-email" id="user-email">
+          </form>
+          <button class="overflay-btn" type="submit">Send</button>
+        </div>
+      </div>
+      <!-- #endregion Overflay -->
     </main>
   </body>
 </html>
