@@ -40,12 +40,37 @@
             </li>
           </ul>
         </nav>
-        <button class="header-btn" type="button">Order Now</button>
-        <button class="menu-btn" type="button">
+        <button class="header-btn" type="button" onclick="document.getElementById('order-overflay').classList.add('is-open')">Order Now</button>
+        <button class="menu-btn" type="button" onclick="document.getElementById('header-menu').classList.add('is-open')">
           <svg class="menu-icon" width="24" height="18">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <div class="header-menu" id="header-menu">
+        <div class="menu">
+          <button class="close-menu-btn" type="button"  onclick="document.getElementById('header-menu').classList.remove('is-open')">
+            <svg class="close-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-quit-marker"></use>
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-link current" href="./index.html">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#">About</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#">Service</a>
+            </li>
+            <li class="menu-list-item"><a class="menu-link" href="#">Menu</a></li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- #endregion Header -->
@@ -61,42 +86,44 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button class="hero-btn" type="button">Order Now</button>
+            <button class="hero-btn" type="button" onclick="document.getElementById('order-overflay').classList.add('is-open')">Order Now</button>
           </div>
-          <div class="img-container">
-            <img
-              class="hero-img"
-              src="./images/salad.png"
-              alt="salad"
-              width="580"
-              height="580"
-            />
-            <img
-              class="hero-img second"
-              src="./images/hero-2.png"
-              alt="salad"
-              width="580"
-              height="580"
-            />
-            <img
-              class="hero-img third"
-              src="./images/hero-1.png"
-              alt="salad"
-              width="580"
-              height="580"
-            />
+          <div class="slider">
+            <div class="img-container">
+              <img
+                class="hero-img"
+                src="./images/salad.png"
+                alt="salad"
+                width="580"
+                height="580"
+              />
+              <img
+                class="hero-img"
+                src="./images/hero-2.png"
+                alt="salad"
+                width="580"
+                height="580"
+              />
+              <img
+                class="hero-img"
+                src="./images/hero-1.png"
+                alt="salad"
+                width="580"
+                height="580"
+              />
+            
+            </div>
              <button class="left-btn arrow" type="button">
-               <svg class="icon-arrow" width="12" height="22">
-                        <use href="./images/icons.svg#icon-left"></use>
-                         </svg>
-             </button>
-            <button class="right-btn arrow" type="button">
-              <svg class="icon-arrow" width="12" height="22">
-                        <use href="./images/icons.svg#icon-right"></use>
-              </svg>
-            </button>
+                 <svg class="icon-arrow" width="12" height="22">
+                          <use href="./images/icons.svg#icon-left"></use>
+                           </svg>
+               </button>
+              <button class="right-btn arrow" type="button">
+                <svg class="icon-arrow" width="12" height="22">
+                          <use href="./images/icons.svg#icon-right"></use>
+                </svg>
+              </button>
           </div>
-
 
         </div>
       </section>
@@ -149,7 +176,7 @@
               </li>
             </ul>
               <div class="order-container">
-                <button class="order-btn" type="button">Order Now</button>
+                <button class="order-btn" type="button" onclick="document.getElementById('order-overflay').classList.add('is-open')">Order Now</button>
                   <a class="read-more" href="#"
                     >Read More
                       <svg class="pointer" width="6" height="10" preserveAspectRatio="none">
@@ -329,9 +356,7 @@
               Favorite Food From Anywhere.
             </p>
             <form class="subscribe-form"
-          name="subscribe-form"
-          autocomplete="off"
-          novalidate>
+          name="subscribe-form">
               <div class="subscribe-label">
                 <input
                   class="subscribe-input valid invalid"
@@ -383,9 +408,7 @@
             </ul>
             <div class="strong-container">
               <strong class="strong">Subscribe</strong>
-              <form class="footer-form" name="subscribe-form"
-          autocomplete="off"
-          novalidate>
+              <form class="footer-form" name="subscribe-form">
                 <div class="form-container">
                   <input
                     class="footer-input valid invalid"
@@ -429,18 +452,16 @@
       <!-- #endregion Footer -->
 
       <!-- #region Overflay -->
-      <div class="modal-overflay is-open">
+      <div class="modal-overflay" id="order-overflay">
         <div class="overflay"> 
-          <button class="close-btn" type="button">
+          <button class="close-btn" type="button"  onclick="document.getElementById('order-overflay').classList.remove('is-open')">
             <svg class="close-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-quit-marker"></use>
             </svg>
           </button>
           <p class="overlay-text">Order Form</p>
           <form class="form"
-          name="issue_report_form"
-          autocomplete="off"
-          novalidate>
+          name="issue_report_form">
             <label class="overlay-label" for="user-name">Name</label>
             <input class="overlay-input" type="text" placeholder="Your name" name="user-name" id="user-name">
             <label class="overlay-label" for="user-tel">Phone number</label>
