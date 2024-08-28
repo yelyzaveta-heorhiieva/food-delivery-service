@@ -47,8 +47,9 @@
           </svg>
         </button>
       </div>
-
-      <div class="header-menu" id="header-menu">
+    </header> 
+    
+    <div class="header-menu" id="header-menu">
         <div class="menu">
           <button class="close-menu-btn" type="button"  onclick="document.getElementById('header-menu').classList.remove('is-open')">
             <svg class="close-icon" width="12" height="12">
@@ -72,7 +73,6 @@
           </ul>
         </div>
       </div>
-    </header>
     <!-- #endregion Header -->
     <main>
       <!-- #region Hero -->
@@ -359,12 +359,14 @@
           name="subscribe-form">
               <div class="subscribe-label">
                 <input
-                  class="subscribe-input valid invalid"
+                  class="subscribe-input"
                   type="email"
                   name="user-email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                   placeholder="Enter your email"
+                  required
                 />
-                <div class="error-container active">
+                <div class="error-container">
                   <svg width="12" height="12">
                     <use href="./images/icons.svg#icon-error"></use>
                   </svg>
@@ -383,8 +385,9 @@
         </div>
       </section>
       <!-- #endregion Subscribe -->
-
-      <!-- #region Footer -->
+    </main>
+    
+    <!-- #region Footer -->
       <footer class="footer">
         <div class="container">
           <div class="footer-content">
@@ -411,12 +414,14 @@
               <form class="footer-form" name="subscribe-form">
                 <div class="form-container">
                   <input
-                    class="footer-input valid invalid"
+                    class="footer-input"
                     type="email"
                     name="user-email"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                     required
                     placeholder="Enter your email"
                   />
-                  <div class="error-container active">
+                  <div class="error-container">
                     <svg width="12" height="12">
                       <use href="./images/icons.svg#icon-error"></use>
                     </svg>
@@ -463,16 +468,16 @@
           <form class="form"
           name="issue_report_form">
             <label class="overlay-label" for="user-name">Name</label>
-            <input class="overlay-input" type="text" placeholder="Your name" name="user-name" id="user-name" required>
+            <input class="overlay-input" type="text" placeholder="Your name" name="user-name" id="user-name"  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+" required>
             <label class="overlay-label" for="user-tel">Phone number</label>
-            <input class="overlay-input" type="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" name="user-tel" id="user-tel" required>
+            <input class="overlay-input" type="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" name="user-tel" id="user-tel" title="+380971111111"
+                pattern="^\+380\d{9}$" required>
             <label class="overlay-label" for="user-email">E-mail</label>
-            <input class="overlay-input" type="email" placeholder="example@gmail.com" name="user-email" id="user-email" required>
+            <input class="overlay-input" type="email" placeholder="example@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  name="user-email" id="user-email" required>
           </form>
           <button class="overflay-btn" type="submit">Send</button>
         </div>
       </div>
       <!-- #endregion Overflay -->
-    </main>
   </body>
 </html>

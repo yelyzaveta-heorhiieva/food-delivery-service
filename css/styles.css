@@ -507,13 +507,13 @@ button {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-input.valid,
-.footer-input.valid {
+.subscribe-input:valid,
+.footer-input:valid {
   border-color: #7eb101;
 }
 
-.subscribe-input.invalid,
-.footer-input.invalid {
+.subscribe-input:invalid,
+.footer-input:invalid {
   border-color: #ff705d;
 }
 
@@ -521,6 +521,11 @@ button {
   display: flex;
   gap: 4px;
   align-items: center;
+}
+
+.subscribe-input:placeholder-shown,
+.footer-input:placeholder-shown {
+  border-color: #ffe550;
 }
 
 .error-container {
@@ -652,6 +657,9 @@ button {
   font-size: 12px;
   line-height: 1.5;
   color: #505050;
+}
+
+.footer-input:valid {
 }
 
 .footer-paragraph {
